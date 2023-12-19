@@ -1,0 +1,134 @@
+
+.Home {
+
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 530px;
+    text-align: center;
+    
+   
+}
+.Home__img {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.Home__name {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    margin-top: 2rem;
+    color: rgb(0, 0, 0);
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 0.5rem;
+}
+.home__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 530px;
+    text-align: center;
+    margin-top: 0.51rem;
+   
+   
+}
+.home__social-link {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    margin-top: 2rem;
+    color: rgb(0, 0, 0);
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+   
+    
+    
+    
+   
+   
+}
+.scroll__down {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    width: 100%;
+ }
+
+ .home__scroll-name {
+    font-size: var(--small-font);
+ }
+
+ .mouse {
+    border: 2px solid black;
+    display: block;
+    height: 1.25rem;
+    width: 1.95rem;
+    margin: auto;
+    margin-top: .75rem;
+    border-radius: 1rem;
+    position: relative;
+
+ }
+
+ @keyframes ani-mouse {
+    0% {
+        
+        top: 29%;
+
+    }
+   15%{
+        top:50%;
+    }
+    50% {
+        top:50%;
+    }
+    100% {
+        top:29%;
+    }
+ }
+ .wheel {
+    background-color: var(--title-color);
+    border-radius: 100%;
+    width: 0.25rem;
+    height: 0.25rem;
+    position: absolute;
+    top: .5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: ani-mouse 2s linear infinite;
+ }
+ .home__social-link:hover {
+    background-color: rgb(236, 56, 56);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 0.5rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(10, 221, 6, 0.5);
+    
+ }
+
+ 
